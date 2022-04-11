@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+
+    <%- include('../views/partials/head.ejs');%>
+</head>
+
+<body class="container">
+    <header>
+        <%- include('../views/partials/header.ejs'); %>
+    </header>
+    <div class="container">
+        <form action="/" method="POST">
+            <input type="number" id="matricula" name="matricula" />
+            <br />
+            <input type="password" id="senha" name="senha" />
+            <hr />
+            <input type="checkbox" name="eAdmin" value="1" />
+            <label class="form-check-label" for="eAdmin ">Administrador</label>
+
+            <hr />
+            <div class="mb-3 button" style="margin-left: 8mm">
+                <button class="btn btn-warning" type="reset ">Limpar</button>
+                <button class="btn btn-success" type="submit ">Salvar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
+    <script src="/js/bootstrap.js "></script>
+
+    <footer>
+        <%- include('../views/partials/footer.ejs'); %>
+    </footer>
+</body>
+
+</html>
